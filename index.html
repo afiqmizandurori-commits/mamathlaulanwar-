@@ -1,87 +1,194 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-<title>MA MATHLA'UL ANWAR Lampung</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-body { margin: 0; font-family: Arial; background: #f0f0f0; }
-.header { background: #228B22; color: white; padding: 15px; text-align: center; }
-.header img { width: 90px; }
-.menu { background: #006400; overflow: auto; white-space: nowrap; }
-.menu a { display: inline-block; color: white; text-align: center; padding: 14px 16px; text-decoration: none; }
-.menu a:hover { background: #004d00; }
-.konten { padding: 20px; background: white; margin: 10px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-.galeri img { width: 48%; margin: 1%; border-radius: 8px; }
-.berita { border-left: 4px solid #228B22; padding-left: 10px; margin-bottom: 15px; }
-.footer { background: #006400; color: white; text-align: center; padding: 15px; margin-top: 20px; }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MA Mathla'ul Anwar Gisting</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            background: #f4f7f6;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background: #0d5c3a;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+        }
+        header h1 { margin: 0; font-size: 26px; }
+        header p { margin: 5px 0 0; font-size: 14px; }
+
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        nav a:hover { color: #f39c12; }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: auto;
+            padding: 40px 0;
+        }
+
+        /* Judul Section */
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .section-title h2 {
+            color: #0d5c3a;
+            font-size: 30px;
+            position: relative;
+            display: inline-block;
+        }
+        .section-title h2::after {
+            content: '';
+            width: 70px;
+            height: 3px;
+            background: #f39c12;
+            display: block;
+            margin: 8px auto 0;
+        }
+
+        /* Grid Card */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+            border-left: 5px solid #0d5c3a;
+            transition: 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+        }
+        .card h3 {
+            color: #0d5c3a;
+            margin-top: 0;
+        }
+
+        /* Footer */
+        footer {
+            background: #222;
+            color: #ccc;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        /* Responsive */
+        @media(max-width: 768px) {
+            nav a { display: inline-block; margin: 5px 8px; }
+        }
+    </style>
 </head>
 <body>
 
-<div class="header">
-<img src="LOGO MAMA.png">
-<h2>MA MATHLA'UL ANWAR</h2>
-<p>Lampung</p>
-</div>
+    <!-- HEADER -->
+    <header>
+        <h1>MA Mathla'ul Anwar Gisting</h1>
+        <p>Cerdas • Berakhlak • Islami</p>
+        <nav>
+            <a href="#kegiatan">Kegiatan</a>
+            <a href="#eskul">Ekstrakurikuler</a>
+        </nav>
+    </header>
 
-<div class="menu">
-<a href="#beranda">Beranda</a>
-<a href="#profil">Profil</a>
-<a href="#guru">Guru</a>
-<a href="#galeri">Galeri</a>
-<a href="#berita">Berita</a>
-<a href="#kontak">Kontak</a>
-</div>
+    <!-- KEGIATAN MADRASAH -->
+    <section id="kegiatan">
+        <div class="container">
+            <div class="section-title">
+                <h2>Kegiatan Madrasah</h2>
+            </div>
+            <div class="grid">
+                <div class="card">
+                    <h3>1. Peringatan Hari Besar Islam (PHBI)</h3>
+                    <p>Kegiatan rutin seperti Maulid Nabi, Isra Mi'raj, Nuzul Qur'an dan Tahun Baru Islam. Bertujuan menanamkan nilai keagamaan dan mempererat ukhuwah antar siswa.</p>
+                </div>
+                <div class="card">
+                    <h3>2. Latihan Dasar Kepemimpinan (LDK)</h3>
+                    <p>Pelatihan khusus untuk pengurus OSIS & MPK. Materinya meliputi kepemimpinan, public speaking, manajemen acara, dan kedisiplinan.</p>
+                </div>
+                <div class="card">
+                    <h3>3. Pesantren Kilat Ramadhan</h3>
+                    <p>Kegiatan selama bulan Ramadhan berupa tadarus, kajian kitab, sholat dhuha berjamaah, dan lomba keagamaan antar kelas.</p>
+                </div>
+                <div class="card">
+                    <h3>4. Studi Banding & Outbound</h3>
+                    <p>Kunjungan ke kampus/madrasah lain untuk menambah wawasan, ditambah outbound untuk melatih kerjasama tim dan refreshing siswa.</p>
+                </div>
+                <div class="card">
+                    <h3>5. Upacara Bendera & Apel Pagi</h3>
+                    <p>Dilaksanakan setiap hari Senin untuk menanamkan rasa nasionalisme, disiplin, dan tanggung jawab siswa.</p>
+                </div>
+                <div class="card">
+                    <h3>6. Khotmil Qur'an & Yasinan</h3>
+                    <p>Rutin setiap bulan untuk mendoakan guru, pendiri yayasan, dan meningkatkan kecintaan siswa terhadap Al-Qur'an.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<div class="konten" id="beranda">
-<h3>Selamat Datang</h3>
-<p>Website Resmi MA Mathla'ul Anwar Lampung. Madrasah Berprestasi, Berakhlak Mulia.</p>
-<img src="kegiatan1.jpg" width="100%" style="border-radius:10px;">
-</div>
+    <!-- EKSTRAKURIKULER -->
+    <section id="eskul" style="background: #e9f1ec;">
+        <div class="container">
+            <div class="section-title">
+                <h2>Ekstrakurikuler</h2>
+            </div>
+            <div class="grid">
+                <div class="card">
+                    <h3>1. Pramuka - Pradana MA MA</h3>
+                    <p>Eskul wajib madrasah. Fokus pada kemandirian, kepemimpinan, survival, dan cinta alam. Rutin ada perkemahan dan lomba.</p>
+                </div>
+                <div class="card">
+                    <h3>2. Rohani Islam (Rohis)</h3>
+                    <p>Tempat kajian Islam, tadarus bersama, latihan muhadhoroh, dan pengelolaan mading dakwah. Menjadi garda depan dakwah sekolah.</p>
+                </div>
+                <div class="card">
+                    <h3>3. Palang Merah Remaja (PMR)</h3>
+                    <p>Melatih siswa dalam pertolongan pertama, donor darah, dan kesiapsiagaan bencana. Menumbuhkan jiwa sosial dan kemanusiaan.</p>
+                </div>
+                <div class="card">
+                    <h3>4. Futsal & Voli</h3>
+                    <p>Wadah menyalurkan bakat olahraga. Latihan rutin setiap minggu dan mengikuti turnamen antar madrasah/SMA se-Tanggamus.</p>
+                </div>
+                <div class="card">
+                    <h3>5. PIK-R (Pusat Informasi Konseling Remaja)</h3>
+                    <p>Memberi edukasi tentang kesehatan reproduksi, narkoba, dan pengembangan diri remaja agar tidak terjerumus hal negatif.</p>
+                </div>
+                <div class="card">
+                    <h3>6. Jurnalistik & Mading</h3>
+                    <p>Melatih siswa menulis berita, desain poster, dan mengelola majalah dinding madrasah sebagai media informasi.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<div class="konten" id="profil">
-<h3>Profil Sekolah</h3>
-<p><b>Visi:</b> Menjadi madrasah unggulan dalam prestasi dan akhlak.<br>
-<b>Misi:</b> 1. Meningkatkan kualitas pendidikan<br>2. Membentuk siswa berakhlakul karimah</p>
-</div>
-
-<div class="konten" id="guru">
-<h3>Data Guru & Staf</h3>
-<p>1. Bapak Ahmad Saiful, S.Pd - Kepala Madrasah<br>
-2. Ibu Siti, S.Pd - Waka Kurikulum<br>
-3. Bapak Budi, S.Pd.I - Guru PAI</p>
-<p><i>Tinggal tambah nama guru lainnya di sini</i></p>
-</div>
-
-<div class="konten galeri" id="galeri">
-<h3>Galeri Kegiatan</h3>
-<img src="kegiatan1.jpg">
-<img src="kegiatan2.jpg">
-<p><i>Masukin foto ke folder Download, namain kegiatan1.jpg, kegiatan2.jpg</i></p>
-</div>
-
-<div class="konten" id="berita">
-<h3>Berita Terbaru</h3>
-<div class="berita">
-<h4>Upacara 17 Agustus</h4>
-<p>Siswa MA Mathla'ul Anwar mengikuti upacara dengan khidmat.</p>
-</div>
-<div class="berita">
-<h4>Juara Lomba MTQ</h4>
-<p>Selamat kepada Ananda Aisyah juara 1 MTQ tingkat kecamatan.</p>
-</div>
-</div>
-
-<div class="konten" id="kontak">
-<h3>Kontak Kami</h3>
-<p><b>Alamat:</b> Jl. Raya Banjarnegeri, Lampung<br>
-<b>Telp/WA:</b> 08xx-xxxx-xxxx<br>
-<b>Email:</b> mamathlaulanwar@gmail.com</p>
-</div>
-
-<div class="footer">
-<p>© 2026 MA Mathla'ul Anwar Lampung</p>
-</div>
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 MA Mathla'ul Anwar Gisting | Jl. Raya Gisting, Kab. Tanggamus, Lampung</p>
+    </footer>
 
 </body>
 </html>
