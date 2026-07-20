@@ -114,7 +114,11 @@
             <a href="#eskul">Ekstrakurikuler</a>
         </nav>
     </header>
+</header>
 
+<button id="darkBtn">🌙 Mode Gelap</button>  <!-- PASTE SINI -->
+
+<!-- KEGIATAN MADRASAH -->
     <!-- KEGIATAN MADRASAH -->
     <section id="kegiatan">
         <div class="container">
@@ -189,6 +193,41 @@
     <footer>
         <p>© 2026 MA Mathla'ul Anwar Gisting | Jl. Raya Gisting, Kab. Tanggamus, Lampung</p>
     </footer>
+<script>
+const btn = document.getElementById("darkBtn");
+btn.onclick = () => {
+  document.body.classList.toggle("dark");
+  btn.textContent = document.body.classList.contains("dark") ? "☀️ Mode Terang" : "🌙 Mode Gelap";
+}
+</script>
+
+<style>
+body.dark { 
+  background: #121212; 
+  color: #eee; 
+}
+body.dark header {
+  background: #0a3d2a;
+}
+body.dark .card {
+  background: #222;
+  color: #eee;
+}
+#darkBtn {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 20px;
+  background: #0d5c3a;
+  color: white;
+  cursor: pointer;
+  z-index: 999;
+  font-weight: bold;
+}
+</style>
 
 </body>
+    
 </html>
