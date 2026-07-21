@@ -195,6 +195,7 @@
     </footer>
 <script>
 const btn = document.getElementById("darkBtn");
+btn.textContent = document.body.classList.contains("dark") ? "☀️" : "🌙"; 
 btn.onclick = () => {
   document.body.classList.toggle("dark");
 btn.textContent = document.body.classList.contains("dark") ? "☀️" : "🌙";
