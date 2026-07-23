@@ -254,22 +254,19 @@ body.dark .card {
 body.dark .logo {
   filter: brightness(1.1);
 }
-/* FOTO HERO GEDUNG */
+/* FOTO HERO GEDUNG - VERSI FULL KELIATAN */
 .hero-gedung {
-    position: relative;
     width: 100%;
-    height: 450px;
-    overflow: hidden;
+    background: #0a4d1e; /* background ijo tua biar rapi */
+    text-align: center;
+    padding: 0;
 }
 .hero-gedung img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-/* Buat HP */
-@media(max-width: 768px) {
-    .hero-gedung { height: 250px; }
-}
+    height: auto; /* tinggi ngikutin foto asli */
+    object-fit: contain; /* biar full keliatan gak kepotong */
+    display: block;
+} 
 </style>
 
 </body>
