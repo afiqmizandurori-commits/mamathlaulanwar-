@@ -203,7 +203,9 @@ btn.onclick = () => {
 btn.textContent = document.body.classList.contains("dark") ? "☀️" : "🌙";
 }
 </script>
+}
 
+</style>
 <style>
 body.dark { 
   background: #121212 !important;
@@ -266,9 +268,42 @@ body.dark .logo {
     height: auto; /* tinggi ngikutin foto asli */
     object-fit: contain; /* biar full keliatan gak kepotong */
     display: block;
-} 
+}
+/* RUNNING TEXT */
+.running-wrapper {
+  background: #0a3d1f;
+  color: #fff;
+  padding: 12px 0;
+  overflow: hidden;
+  border-top: 2px solid #0f5c2e;
+}
+.running-title {
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 8px;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+.running-text {
+  white-space: nowrap;
+  display: inline-block;
+  padding-left: 100%;
+  animation: jalan 20s linear infinite;
+  font-size: 15px;
+}
+@keyframes jalan {
+ 0%   { transform: translateX(0); }
+ 100% { transform: translateX(-100%); }
+}
+.running-wrapper:hover .running-text {
+  animation-play-state: paused;
+}
 </style>
-
+<div class="running-wrapper">
+  <div class="running-title">📢 INFO & PENGUMUMAN</div>
+  <div class="running-text">
+    Selamat datang di Website MA Mathla'ul Anwar Gisting | Dikembangkan oleh Afiq Mizan Durori | Pengajian Rutin tiap Jumat | Pendaftaran Ekstrakurikuler dibuka
+  </div>
 </body>
     
 </html>
